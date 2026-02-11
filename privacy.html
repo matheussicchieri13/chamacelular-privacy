@@ -1,339 +1,99 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <!-- charset = conjunto de caracteres (acentos, etc.) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- viewport = ajusta para celular -->
-
-  <title>Política de Privacidade — Chama Celular</title>
-  <!-- title = título que aparece na aba do navegador -->
-
-  <meta name="description" content="Política de Privacidade do aplicativo Chama Celular." />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chamaCelular - Politica de Privacidade</title>
   <style>
-    :root{
-      --bg:#0b0f17;
-      --card:#111827;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --link:#60a5fa;
-      --border:#1f2937;
-      --warn:#fbbf24;
-      --ok:#34d399;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d1238;
+      color: #ffffff;
+      line-height: 1.6;
     }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#f8fafc;
-        --card:#ffffff;
-        --text:#0f172a;
-        --muted:#475569;
-        --link:#2563eb;
-        --border:#e2e8f0;
-        --warn:#b45309;
-        --ok:#059669;
-      }
-    }
-
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    .wrap{
-      max-width: 920px;
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      padding: 28px 16px 64px;
+      padding: 24px;
     }
-    header{
-      padding: 18px 16px;
-      background: linear-gradient(180deg, rgba(96,165,250,.18), rgba(96,165,250,0));
-      border: 1px solid var(--border);
+    .card {
+      background: #1a1f5d;
       border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      border: 1px solid #2c316b;
     }
-    h1{
-      margin: 0 0 6px 0;
-      font-size: 28px;
-      letter-spacing: -0.02em;
-    }
-    .meta{
-      color:var(--muted);
-      font-size: 14px;
-      margin:0;
-    }
-    .card{
-      margin-top: 16px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px 16px;
-    }
-    a{ color: var(--link); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
-    .toc{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
-      margin: 10px 0 0;
-      padding: 0;
-      list-style: none;
-    }
-    .toc a{
-      display:block;
-      padding:10px 12px;
-      border:1px solid var(--border);
-      border-radius: 12px;
-      background: rgba(255,255,255,.02);
-    }
-    .tag{
-      display:inline-block;
-      font-size:12px;
-      padding: 2px 8px;
-      border-radius: 999px;
-      border:1px solid var(--border);
-      color:var(--muted);
-      margin-left: 8px;
-      vertical-align: middle;
-    }
-    .note{
-      border-left: 4px solid var(--warn);
-      padding: 10px 12px;
-      background: rgba(251,191,36,.08);
-      border-radius: 12px;
-      margin: 12px 0 0;
-      color: var(--text);
-    }
-    .ok{
-      border-left-color: var(--ok);
-      background: rgba(52,211,153,.08);
-    }
-    h2{
-      margin-top: 18px;
-      margin-bottom: 8px;
-      font-size: 20px;
-      letter-spacing: -0.01em;
-    }
-    h3{
-      margin-top: 14px;
-      margin-bottom: 6px;
-      font-size: 16px;
-    }
-    ul{ margin: 8px 0 0 18px; }
-    li{ margin: 6px 0; }
-    footer{
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align: center;
-    }
-    code{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.95em;
-      background: rgba(255,255,255,.06);
-      padding: 2px 6px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
+    h1, h2 { margin-top: 0; }
+    ul { margin-top: 8px; }
+    a { color: #9fb2ff; }
+    .muted { color: #d0d5ff; }
   </style>
 </head>
-
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Política de Privacidade — Chama Celular</h1>
-      <p class="meta">
-        Última atualização: <strong>11/02/2026</strong>
-        <span class="tag">LGPD</span>
-        <span class="tag">Google Play</span>
-      </p>
-      <div class="note ok">
-        Esta página foi criada para explicar, de forma clara, como o app <strong>Chama Celular</strong> lida com dados e permissões.
-      </div>
-    </header>
+  <main class="container">
+    <h1>Politica de Privacidade - chamaCelular</h1>
+    <p class="muted">
+      Ultima atualizacao: 11/02/2026
+    </p>
 
     <section class="card">
-      <h2>Resumo rápido</h2>
-      <ul>
-        <li>O app usa <strong>microfone</strong> para detectar a frase de ativação e recursos de voz.</li>
-        <li>O app pode funcionar <strong>offline</strong> e manter escuta por <strong>serviço em primeiro plano</strong> (com notificação).</li>
-        <li>O app usa <strong>Login com Google</strong> para ativar a escuta.</li>
-        <li>O app exibe <strong>anúncios</strong> (AdMob) e pode usar identificadores para entrega/medição.</li>
-      </ul>
-
-      <h3>Índice</h3>
-      <ul class="toc">
-        <li><a href="#responsavel">1) Quem é o responsável</a></li>
-        <li><a href="#dados">2) Dados que o app pode coletar</a></li>
-        <li><a href="#finalidades">3) Como usamos os dados</a></li>
-        <li><a href="#offline">4) Processamento de voz e offline</a></li>
-        <li><a href="#compartilhamento">5) Compartilhamento com terceiros</a></li>
-        <li><a href="#permissoes">6) Permissões do Android</a></li>
-        <li><a href="#retencao">7) Retenção e segurança</a></li>
-        <li><a href="#direitos">8) Seus direitos (LGPD)</a></li>
-        <li><a href="#criancas">9) Crianças e adolescentes</a></li>
-        <li><a href="#mudancas">10) Alterações nesta política</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </section>
-
-    <section id="responsavel" class="card">
-      <h2>1) Quem é o responsável</h2>
+      <h2>1. Quem somos</h2>
       <p>
-        O responsável pelo aplicativo <strong>Chama Celular</strong> (“App”) é:
-      </p>
-      <ul>
-        <li><strong>Nome:</strong> Matheus Sicchieri</li>
-        <li><strong>E-mail de suporte:</strong> <a href="mailto:matheussicchieri@gmail.com">matheussicchieri@gmail.com</a></li>
-      </ul>
-    </section>
-
-    <section id="dados" class="card">
-      <h2>2) Dados que o app pode coletar</h2>
-
-      <h3>2.1 Dados de conta (Login)</h3>
-      <ul>
-        <li><strong>E-mail</strong> e identificadores de conta ao fazer login com Google (ex.: ID do usuário).</li>
-        <li>Dados básicos do perfil fornecidos pelo Google (ex.: nome e foto), se aplicável.</li>
-      </ul>
-
-      <h3>2.2 Microfone (áudio)</h3>
-      <ul>
-        <li>O App utiliza o <strong>microfone</strong> para detectar a frase de ativação (“Chama Celular”) e recursos de validação/reconhecimento de voz.</li>
-        <li>O App <strong>não tem como objetivo gravar conversas</strong> nem armazenar áudio para outros fins.</li>
-      </ul>
-
-      <h3>2.3 Dados do dispositivo e diagnósticos</h3>
-      <ul>
-        <li>Informações técnicas do dispositivo (ex.: modelo, versão do Android, idioma) para compatibilidade e melhoria do App.</li>
-        <li>Registros de falhas (crash) e desempenho, quando habilitados, para correções e estabilidade.</li>
-      </ul>
-
-      <h3>2.4 Dados para anúncios (AdMob)</h3>
-      <ul>
-        <li>O App exibe anúncios (banner, intersticial e recompensado) e pode utilizar <strong>identificadores de publicidade</strong> e dados do dispositivo para entregar e medir anúncios.</li>
-      </ul>
-
-      <h3>2.5 Analytics (se habilitado)</h3>
-      <ul>
-        <li>O App pode coletar métricas de uso (eventos de navegação/interações) para estatísticas e melhorias, quando habilitado.</li>
-      </ul>
-    </section>
-
-    <section id="finalidades" class="card">
-      <h2>3) Como usamos os dados</h2>
-      <p>Usamos os dados para:</p>
-      <ul>
-        <li><strong>Operar o App</strong>, incluindo ativação da escuta e disparo de alertas.</li>
-        <li><strong>Autenticar o usuário</strong> (login com Google) para ativar a escuta.</li>
-        <li><strong>Melhorar estabilidade e desempenho</strong> (erros, métricas e diagnósticos), quando habilitado.</li>
-        <li><strong>Exibir e medir anúncios</strong> por meio do Google AdMob, quando aplicável.</li>
-        <li><strong>Segurança e prevenção de abuso</strong>, quando necessário.</li>
-      </ul>
-    </section>
-
-    <section id="offline" class="card">
-      <h2>4) Processamento de voz e funcionamento offline</h2>
-      <p>
-        O App pode funcionar <strong>offline</strong>. Quando aplicável, o processamento para detectar a frase/voz
-        pode ocorrer <strong>no próprio dispositivo</strong>.
-      </p>
-      <div class="note ok">
-        O App utiliza <strong>serviço em primeiro plano</strong> (foreground service) com notificação visível ao usuário quando a escuta está ativa.
-      </div>
-    </section>
-
-    <section id="compartilhamento" class="card">
-      <h2>5) Compartilhamento com terceiros</h2>
-      <p>
-        O App pode compartilhar dados apenas quando necessário para operar os serviços, como:
-      </p>
-      <ul>
-        <li><strong>Google/Firebase</strong> (ex.: autenticação, métricas/diagnósticos, se habilitado).</li>
-        <li><strong>Google AdMob</strong> (exibição e medição de anúncios).</li>
-      </ul>
-      <p>
-        Esses serviços podem coletar e processar dados conforme suas próprias políticas:
-      </p>
-      <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a></li>
-        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacidade e segurança no Firebase</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob e privacidade</a></li>
-      </ul>
-    </section>
-
-    <section id="permissoes" class="card">
-      <h2>6) Permissões do Android</h2>
-      <p>O App pode solicitar permissões como:</p>
-      <ul>
-        <li><strong>Microfone</strong>: para detectar a frase de ativação e recursos de voz.</li>
-        <li><strong>Serviço em primeiro plano</strong>: para manter a escuta ativa com notificação visível ao usuário.</li>
-        <li><strong>Lanterna/flash</strong>: para piscar durante o alerta, quando disponível.</li>
-      </ul>
-      <div class="note">
-        Você pode gerenciar permissões em: <code>Configurações &gt; Apps &gt; Chama Celular &gt; Permissões</code>.
-      </div>
-    </section>
-
-    <section id="retencao" class="card">
-      <h2>7) Retenção e segurança</h2>
-      <ul>
-        <li>Mantemos dados apenas pelo tempo necessário para as finalidades descritas.</li>
-        <li>Aplicamos medidas razoáveis de segurança para proteger informações.</li>
-        <li>Nenhum sistema é 100% seguro; por isso, recomendamos manter seu dispositivo atualizado.</li>
-      </ul>
-    </section>
-
-    <section id="direitos" class="card">
-      <h2>8) Seus direitos (LGPD)</h2>
-      <p>Você pode solicitar:</p>
-      <ul>
-        <li>Confirmação e acesso aos dados</li>
-        <li>Correção</li>
-        <li>Exclusão (quando aplicável)</li>
-        <li>Informações sobre compartilhamento</li>
-        <li>Revogação de consentimento (quando aplicável)</li>
-      </ul>
-      <p>
-        Para exercer seus direitos, contate: <a href="mailto:matheussicchieri@gmail.com">matheussicchieri@gmail.com</a>
+        O app chamaCelular e um aplicativo Android para localizacao do dispositivo por comando de voz.
       </p>
     </section>
 
-    <section id="criancas" class="card">
-      <h2>9) Crianças e adolescentes</h2>
+    <section class="card">
+      <h2>2. Dados tratados</h2>
+      <ul>
+        <li>Dados de conta (login Google/Firebase), como identificador de usuario e e-mail</li>
+        <li>Dados tecnicos para funcionamento e seguranca do app</li>
+        <li>Dados de anuncios (AdMob), conforme politicas da Google</li>
+      </ul>
       <p>
-        O App <strong>não é direcionado</strong> a menores de 13 anos.
-        Se você acredita que dados de menores foram fornecidos indevidamente, entre em contato para avaliação e remoção quando aplicável.
+        O audio usado para reconhecimento funciona prioritariamente no dispositivo para ativacao do recurso.
       </p>
     </section>
 
-    <section id="mudancas" class="card">
-      <h2>10) Alterações nesta política</h2>
+    <section class="card">
+      <h2>3. Finalidades</h2>
+      <ul>
+        <li>Autenticacao e controle de acesso a recursos do app</li>
+        <li>Execucao da funcionalidade principal de escuta e alerta</li>
+        <li>Monetizacao por anuncios e melhoria do servico</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Compartilhamento</h2>
       <p>
-        Podemos atualizar esta Política para refletir melhorias no App, exigências legais ou mudanças de serviços.
-        A data da última atualização ficará no topo desta página.
+        Podemos compartilhar dados com provedores integrados ao app, como Google/Firebase e Google AdMob,
+        de acordo com as politicas desses servicos.
       </p>
     </section>
 
-    <section id="contato" class="card">
-      <h2>Contato</h2>
+    <section class="card">
+      <h2>5. Seguranca</h2>
       <p>
-        Dúvidas sobre privacidade ou solicitações (LGPD):<br />
-        <strong>E-mail:</strong> <a href="mailto:matheussicchieri@gmail.com">matheussicchieri@gmail.com</a>
+        Utilizamos criptografia em transito (HTTPS/TLS) nas comunicacoes de rede do aplicativo.
       </p>
     </section>
 
-    <footer>
-      © <span id="year"></span> Chama Celular — Política de Privacidade
-    </footer>
-  </div>
+    <section class="card">
+      <h2>6. Direitos do usuario</h2>
+      <p>
+        O usuario pode solicitar exclusao de conta e dados conforme instrucoes na pagina:
+        <a href="./account-deletion.html">Exclusao de conta e dados</a>.
+      </p>
+    </section>
 
-  <script>
-    // script = pequeno código JavaScript para colocar o ano atual automaticamente
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <section class="card">
+      <h2>7. Contato</h2>
+      <p>
+        E-mail de suporte/privacidade: <strong>matheussicchieri@gmail.com</strong>
+      </p>
+    </section>
+  </main>
 </body>
 </html>
-```
